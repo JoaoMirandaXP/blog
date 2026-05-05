@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build:watch": "tsc -w",
+    "serve": "browser-sync start --server 'dist'",
+    "dev": "concurrently \"npm run build:watch\" \"npm run serve\""
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "concurrently": "^9.2.1",
+    "typescript": "^6.0.3"
+  }
+}
