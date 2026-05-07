@@ -99,3 +99,11 @@ Deve ter um jeito legal de copiar esse json aí de cima e mesclar com o que voc�
 Essas são as configurações por convenção do typescript, por projeto, quando for rodar o watcher(`tsc -w <arquivo>`)
 
 > Para quando eu for continuar, agora eu iria escrever sobre as extensões que gostaria de instalar (browser-sync, concurently e talvez o vite pois preciso descobrir como vou fazer o roteamento...) 
+
+# Referências
+https://unibb.alura.com.br/course/typescript-pratica-projeto-completo-typescript-modulos/task/133248
+https://dev.to/nexxeln/make-and-deploy-your-own-blog-in-under-30-mins-448p
+https://dev.to/blamsa0mine/building-a-modern-blog-platform-with-react-19-typescript-and-shadcnui-3ao3
+https://www.typescriptlang.org/play/
+https://unibb.alura.com.br/course/typescript-pratica-projeto-completo-typescript-modulos/task/133248
+https://dev.to/codewithahsan/the-complete-typescript-setup-from-zero-to-hero-398h
