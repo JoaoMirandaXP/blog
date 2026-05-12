@@ -1,12 +1,18 @@
 {
   "scripts": {
-    "build:watch": "tsc -w",
-    "serve": "browser-sync start --server 'dist'",
-    "dev": "concurrently \"npm run build:watch\" \"npm run serve\""
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "browser-sync": "^3.0.4",
-    "concurrently": "^9.2.1",
-    "typescript": "^6.0.3"
+    "@vitejs/plugin-react": "^6.0.1",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.12"
+  },
+  "dependencies": {
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-router-dom": "^7.15.0",
+    "vite-plugin-markdown": "^2.2.0"
   }
 }

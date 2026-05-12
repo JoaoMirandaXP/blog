@@ -1,5 +1,7 @@
 ---
 title: basic-typescript-blog
+url: basic-typescript-blog
+
 ---
 
 # Basic Typescript Blog
@@ -99,6 +101,47 @@ Deve ter um jeito legal de copiar esse json aí de cima e mesclar com o que voc�
 Essas são as configurações por convenção do typescript, por projeto, quando for rodar o watcher(`tsc -w <arquivo>`)
 
 > Para quando eu for continuar, agora eu iria escrever sobre as extensões que gostaria de instalar (browser-sync, concurently e talvez o vite pois preciso descobrir como vou fazer o roteamento...) 
+
+## Extensões
+
+Para tudo funcionar direitinho, eu coloquei algumas extensões para facilitar a vida.
+
+São elas
+
+```
+npm i -D browser-sync concurrently # ainda não sei instalar o react
+```
+
+
+### browser-sync
+Para fazer refresh automático
+
+
+### concurently
+Para fazer várias coisas ao mesmo tempo
+
+### react
+Para programar facin
+
+### mdx
+pra escrever fácil
+
+E fazer o roteamento básico para a pasta de contents
+
+## Scripts
+
+São úteis para desenvolver bem.
+
+os meus estão assim:
+
+"scripts": {
+    "build:watch": "tsc -w",
+    "serve": "browser-sync start --server 'dist'",
+    "dev": "concurrently \"npm run build:watch\" \"npm run serve\""
+}
+
+
+
 
 # Referências
 https://unibb.alura.com.br/course/typescript-pratica-projeto-completo-typescript-modulos/task/133248
