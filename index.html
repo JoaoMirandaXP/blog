@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ideias!</title> 
+    <script>
+  	// Restaura a URL original que foi codificada pelo 404.html
+  	(function () {
+    	      const query = window.location.search;
+    	      if (query.startsWith('?p=')) {
+	      const path = decodeURIComponent(query.slice(3));
+	      window.history.replaceState(null, '', '/blog' + path);
+	    }
+	  })();
+    </script>
   </head>
 
   <body>	  

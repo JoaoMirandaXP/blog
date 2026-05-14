@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script>
+      // Pega o caminho após o repositório (ex: /blog/post/obsidian-git)
+      const repo = '/blog'; // nome do seu repositório
+      const path = window.location.pathname;
+      const search = window.location.search;
+      const hash = window.location.hash;
+
+      // Redireciona para index.html com a rota como query string
+      const redirect =
+        window.location.origin +
+        repo +
+        '/?p=' +
+        encodeURIComponent(path.slice(repo.length) + search + hash);
+
+      window.location.replace(redirect);
+    </script>
+  </head>
+</html>
